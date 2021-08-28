@@ -1,0 +1,55 @@
+{
+  "name": "yearlink_app",
+  "version": "1.0.0",
+  "description": "URL shortener for the Bobtail Yearlings.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "gatsby clean",
+    "build:staging": "gatsby build",
+    "build:production": "BUILD=production gatsby build",
+    "deploy": "gatsby-plugin-s3 deploy --yes",
+    "start": "npm run clean && DESTINATION=local BUILD=runtime gatsby develop --port 1117",
+    "serve": "gatsby serve --port 1117",
+    "stage": "npm run clean && DESTINATION=local npm run build:staging && npm run serve",
+    "release:production": "npm run clean && DESTINATION=production npm run build:production && npm run deploy",
+    "lint": "eslint --ext js,jsx src",
+    "lint:fix": "eslint --ext js,jsx --fix src"
+  },
+  "author": "Bobtail Yearlings",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bennettslin/yearlink_app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bennettslin/yearlink_app/issues"
+  },
+  "homepage": "https://yearl.ink",
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/eslint-parser": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.24.1",
+    "eslint-plugin-react": "^7.24.0",
+    "esm": "^3.2.25",
+    "gatsby": "^3.12.0",
+    "gatsby-plugin-manifest": "^3.12.0",
+    "gatsby-plugin-react-helmet": "^4.12.0",
+    "gatsby-plugin-remove-trailing-slashes": "^3.12.0",
+    "gatsby-plugin-s3": "^0.3.8",
+    "jsdom": "^16.7.0",
+    "webpack": "^5.51.1"
+  }
+}
