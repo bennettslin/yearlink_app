@@ -1,11 +1,11 @@
 import { getFormattedUrl, getUrlForFile } from '../../constants/pages'
 
 export const getMetaTitle = () => (
-    `Bobtail Yearlink`
+    `A Bobtail Yearlink!`
 )
 
 export const getMetaDescription = longUrl => (
-    getFormattedUrl(longUrl)
+    `Link to ${getFormattedUrl(longUrl)}`
 )
 
 const getDefaultConfig = description => ({
