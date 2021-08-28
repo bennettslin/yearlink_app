@@ -7,7 +7,7 @@ export default {
             options: {
                 name: `Bobtail Yearlink`,
                 short_name: `Bobtail Yearlink`,
-                description: 'URL shortener for the Bobtail Yearlings',
+                description: 'Quick and dirty URL shortener for the Bobtail Yearlings',
                 start_url: '/',
                 background_color: '#e6e6ad',
                 theme_color: '#b38e6b',

@@ -1,7 +1,7 @@
 {
   "name": "yearlink_app",
   "version": "1.0.0",
-  "description": "URL shortener for the Bobtail Yearlings.",
+  "description": "Quick and dirty URL shortener for the Bobtail Yearlings.",
   "main": "index.js",
   "scripts": {
     "clean": "gatsby clean",
