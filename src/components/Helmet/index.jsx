@@ -14,12 +14,6 @@ const Helmet = ({
             <title>
                 {getMetaTitle()}
             </title>
-            <meta
-                {...{
-                    'http-equiv': 'refresh',
-                    content: `0; url=${longUrl}`,
-                }}
-            />
             {getMetaTags(longUrl).map(({
                 name,
                 property,
@@ -34,6 +28,12 @@ const Helmet = ({
                     }}
                 />
             ))}
+            <meta
+                {...{
+                    'http-equiv': 'refresh',
+                    content: `0; url=${longUrl}`,
+                }}
+            />
         </ReactHelmet>
     )
 }
