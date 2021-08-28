@@ -14,12 +14,12 @@ const Helmet = ({
             <title>
                 {getMetaTitle()}
             </title>
-            {/* <meta
+            <meta
                 {...{
                     'http-equiv': 'refresh',
                     content: `0; url=${longUrl}`,
                 }}
-            /> */}
+            />
             {getMetaTags(longUrl).map(({
                 name,
                 property,
