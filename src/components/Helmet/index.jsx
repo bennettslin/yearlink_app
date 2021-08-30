@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet as ReactHelmet } from 'react-helmet'
-import {
-    getMetaTitle,
-    getMetaTags,
-} from './helper'
+// import {
+//     getMetaTitle,
+//     getMetaTags,
+// } from './helper'
 
 const Helmet = ({
     longUrl,
 }) => {
     return (
         <ReactHelmet>
-            <title>
+            {/* <title>
                 {getMetaTitle()}
             </title>
             {getMetaTags(longUrl).map(({
@@ -27,7 +27,7 @@ const Helmet = ({
                         content,
                     }}
                 />
-            ))}
+            ))} */}
             <meta
                 {...{
                     'http-equiv': 'refresh',
