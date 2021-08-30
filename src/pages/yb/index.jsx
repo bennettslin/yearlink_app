@@ -1,13 +1,13 @@
 import React from 'react'
 import Page from '../../containers/Page'
 
-const Test = () => (
+const YearlingsBobtail = () => (
     <Page
         {...{
-            shortUrl: 'test',
+            shortUrl: 'yb',
             longUrl: 'https://www.yearlingsbobtail.com/',
         }}
     />
 )
 
-export default Test
+export default YearlingsBobtail
