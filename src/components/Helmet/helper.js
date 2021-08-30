@@ -8,9 +8,9 @@ export const getMetaDescription = longUrl => (
     `Link to ${getFormattedUrl(longUrl)}`
 )
 
-const getDefaultConfig = description => ({
-    description: getMetaDescription(description),
-})
+// const getDefaultConfig = description => ({
+//     description: getMetaDescription(description),
+// })
 
 const getFacebookConfig = longUrl => ({
     'og:url': longUrl,
@@ -39,7 +39,7 @@ const spreadHelmetConfig = ({ config, nameKey }) => (
 export const getMetaTags = longUrl => ([
     ...spreadHelmetConfig({
         config: {
-            ...getDefaultConfig(longUrl),
+            // ...getDefaultConfig(longUrl),
             ...getTwitterConfig(longUrl),
         },
         nameKey: 'name',
