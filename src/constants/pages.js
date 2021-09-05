@@ -1,16 +1,16 @@
-const YEARLINK_DOMAIN = `https://www.yearl.ink`
-const YEARLINK_SHORT_DOMAIN = `yearl.ink`
+const DOMAIN_NAME = `https://www.yearl.ink`
+const DOMAIN_NAME_SHORT = `yearl.ink`
 
 export const getPathForPage = page => (
     page ? `/${page}` : ''
 )
 
 export const getUrlForFile = filePath => (
-    `${YEARLINK_DOMAIN}${getPathForPage(filePath)}`
+    `${DOMAIN_NAME}${getPathForPage(filePath)}`
 )
 
 export const getShortUrlForFile = filePath => (
-    `${YEARLINK_SHORT_DOMAIN}${getPathForPage(filePath)}`
+    `${DOMAIN_NAME_SHORT}${getPathForPage(filePath)}`
 )
 
 export const getFormattedUrl = url => (

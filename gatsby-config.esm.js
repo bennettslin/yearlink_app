@@ -1,13 +1,18 @@
-import { getFaviconFileName } from './src/utils/server'
+import {
+    APP_DESCRIPTION,
+    APP_TITLE,
+    getFaviconFileName,
+    getS3BucketName,
+} from './src/utils/server'
 
 export default {
     plugins: [
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `Bobtail Yearlink`,
-                short_name: `Bobtail Yearlink`,
-                description: 'Quick and dirty URL shortener for the Bobtail Yearlings',
+                name: APP_TITLE,
+                short_name: APP_TITLE,
+                description: APP_DESCRIPTION,
                 start_url: '/',
                 background_color: '#e6e6ad',
                 theme_color: '#b38e6b',
@@ -20,7 +25,7 @@ export default {
         {
             resolve: `gatsby-plugin-s3`,
             options: {
-                bucketName: 'yearlink--production',
+                bucketName: getS3BucketName(),
             },
         },
     ],

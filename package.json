@@ -1,15 +1,15 @@
 {
   "name": "yearlink_app",
   "version": "1.0.0",
-  "description": "Quick and dirty URL shortener for the Bobtail Yearlings.",
+  "description": "Client-side URL shortener for the Bobtail Yearlings.",
   "main": "index.js",
   "scripts": {
     "clean": "gatsby clean",
     "build:staging": "gatsby build",
     "build:production": "BUILD=production gatsby build",
     "deploy": "gatsby-plugin-s3 deploy --yes",
-    "start": "npm run clean && DESTINATION=local BUILD=runtime gatsby develop --port 1117",
-    "serve": "gatsby serve --port 1117",
+    "start": "npm run clean && DESTINATION=local BUILD=runtime gatsby develop --port 1111",
+    "serve": "gatsby serve --port 1111",
     "stage": "npm run clean && DESTINATION=local npm run build:staging && npm run serve",
     "release:production": "npm run clean && DESTINATION=production npm run build:production && npm run deploy",
     "lint": "eslint --ext js,jsx src",
