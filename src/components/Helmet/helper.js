@@ -24,7 +24,7 @@ const getFacebookConfig = longUrl => ({
 
 const getTwitterConfig = longUrl => ({
     'twitter:card': 'summary',
-    'twitter:site': TWITTER_ACCOUNT,
+    'twitter:site': `@${TWITTER_ACCOUNT}`,
     'twitter:title': getMetaTitle(),
     'twitter:description': getMetaDescription(longUrl),
     'twitter:image':

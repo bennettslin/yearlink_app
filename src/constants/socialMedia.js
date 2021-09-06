@@ -1,1 +1,1 @@
-export const TWITTER_ACCOUNT = '@BobtailYearling'
+export const TWITTER_ACCOUNT = 'BobtailYearling'
