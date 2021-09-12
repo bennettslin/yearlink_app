@@ -1,21 +1,21 @@
 export default [
     {
-        shortUrl: '/',
+        path: '/',
     },
     {
-        shortUrl: 'bd',
+        path: 'bd',
         longUrl: 'https://bobtaildominoes.com/',
     },
     {
-        shortUrl: 'by',
+        path: 'by',
         longUrl: 'https://www.bobtailyearlings.com/',
     },
     {
-        shortUrl: 'byc',
+        path: 'byc',
         longUrl: 'https://www.bycombo.com/',
     },
     {
-        shortUrl: 'yb',
+        path: 'yb',
         longUrl: 'https://www.yearlingsbobtail.com/',
     },
 ]

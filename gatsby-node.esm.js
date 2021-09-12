@@ -1,10 +1,15 @@
-import links from './src/links'
+import pages from './src/utils/gatsby/pages'
 
 export const createPages = ({ actions }) => {
-    links.forEach(link => {
+    pages.forEach(({
+        path,
+        longUrl,
+    }) => {
         actions.createPage({
-            path: link.shortUrl,
-            context: link,
+            path,
+            context: {
+                longUrl,
+            },
             component: require.resolve('./src/containers/Page/index.jsx'),
         })
     })
