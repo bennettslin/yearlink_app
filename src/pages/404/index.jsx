@@ -1,8 +1,8 @@
 import React from 'react'
 import Page from '../../containers/Page'
 
-const NotFound = () => (
+const Component = () => (
     <Page />
 )
 
-export default NotFound
+export default Component
