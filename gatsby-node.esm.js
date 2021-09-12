@@ -1,15 +1,9 @@
 import pages from './src/utils/gatsby/pages'
 
 export const createPages = ({ actions }) => {
-    pages.forEach(({
-        path,
-        longUrl,
-    }) => {
+    pages.forEach(page => {
         actions.createPage({
-            path,
-            context: {
-                longUrl,
-            },
+            ...page,
             component: require.resolve('./src/containers/Page/index.jsx'),
         })
     })

@@ -4,18 +4,18 @@ export default [
     },
     {
         path: 'bd',
-        longUrl: 'https://bobtaildominoes.com/',
+        context: { longUrl: 'https://bobtaildominoes.com/' },
     },
     {
         path: 'by',
-        longUrl: 'https://www.bobtailyearlings.com/',
+        context: { longUrl: 'https://www.bobtailyearlings.com/' },
     },
     {
         path: 'byc',
-        longUrl: 'https://www.bycombo.com/',
+        context: { longUrl: 'https://www.bycombo.com/' },
     },
     {
         path: 'yb',
-        longUrl: 'https://www.yearlingsbobtail.com/',
+        context: { longUrl: 'https://www.yearlingsbobtail.com/' },
     },
 ]
