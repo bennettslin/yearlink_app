@@ -14,14 +14,15 @@ export default {
                 short_name: APP_TITLE,
                 description: APP_DESCRIPTION,
                 start_url: '/',
-                background_color: '#e6e6ad',
-                theme_color: '#b38e6b',
+                background_color: '#99e1d9',
+                theme_color: '#5d576b',
                 display: 'standalone',
                 icon: `src/assets/favicon/${getFaviconFileName()}.png`,
             },
         },
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-remove-trailing-slashes`,
+        `gatsby-plugin-sass`,
         {
             resolve: `gatsby-plugin-s3`,
             options: {

@@ -12,11 +12,3 @@ export const getUrlForFile = filePath => (
 export const getShortUrlForFile = filePath => (
     `${DOMAIN_NAME_SHORT}${getPathForPage(filePath)}`
 )
-
-export const getFormattedUrl = url => (
-    url
-        .replace('https:', '')
-        .replace('//www.', '')
-        .replace('//', '')
-        .replace(/\/$/, '') // Remove trailing slash
-)

@@ -1,0 +1,13 @@
+@import '../../scss/constants/responsive';
+
+.Page {
+    padding: $margin__sm;
+
+    @media (min-width: $breakpoint__sm) {
+        padding: $margin__md;
+    }
+
+    @media (min-width: $breakpoint__md) {
+        padding: $margin__lg;
+    }
+}

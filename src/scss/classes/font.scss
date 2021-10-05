@@ -1,0 +1,34 @@
+@import '../constants/colours';
+@import '../constants/responsive';
+
+@font-face {
+    font-family: PortLligatSlab;
+    src: url('../assets/fonts/PortLligatSlab/PortLligatSlab-Regular.ttf');
+}
+
+@font-face {
+    font-family: Ranchers;
+    src: url('../assets/fonts/Ranchers/Ranchers-Regular.ttf');
+}
+
+.font__text {
+    font-family: PortLligatSlab, Arial;
+}
+
+.font__heading {
+    font-family: Ranchers, Georgia;
+    font-weight: normal;
+    letter-spacing: 0.025em;
+}
+
+.fontSize__md {
+    line-height: 1.5em;
+
+    @media (min-width: $breakpoint__sm) {
+        font-size: 1.25em;
+    }
+
+    @media (min-width: $breakpoint__md) {
+        font-size: 1.5em;
+    }
+}

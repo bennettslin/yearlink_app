@@ -1,0 +1,11 @@
+@import '../../scss/constants/responsive';
+
+.Markdown {
+    & > *:not(:first-child) {
+        margin-top: $margin__md;
+
+        &.Heading {
+            margin-top: $margin__lg;
+        }
+    }
+}

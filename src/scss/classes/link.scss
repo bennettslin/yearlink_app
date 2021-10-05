@@ -1,0 +1,14 @@
+.colour__link {
+    color: $colour__link__dark;
+    fill: $colour__link__dark;
+
+    &:not([disabled]):hover {
+        color: $colour__link__medium;
+        fill: $colour__link__medium;
+    }
+
+    &:not([disabled]):active {
+        color: $colour__link__light;
+        fill: $colour__link__light;
+    }
+}

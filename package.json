@@ -26,10 +26,12 @@
   },
   "homepage": "https://yearl.ink",
   "dependencies": {
+    "classnames": "^2.3.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
+    "react-markdown": "^6.0.3",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0"
   },
@@ -48,7 +50,9 @@
     "gatsby-plugin-react-helmet": "^4.12.0",
     "gatsby-plugin-remove-trailing-slashes": "^3.12.0",
     "gatsby-plugin-s3": "^0.3.8",
+    "gatsby-plugin-sass": "^4.14.0",
     "jsdom": "^16.7.0",
+    "sass": "^1.42.1",
     "webpack": "^5.51.1"
   }
 }

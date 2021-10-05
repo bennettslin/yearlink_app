@@ -1,32 +1,32 @@
-import { getFormattedUrl, getUrlForFile } from '../../constants/pages'
+import { getShortUrlForFile, getUrlForFile } from '../../constants/pages'
 import { TWITTER_ACCOUNT } from '../../constants/socialMedia'
 import { APP_NAME } from '../../utils/server'
 
 export const getMetaTitle = () => (
-    `A Bobtail Yearlink!`
+    `Bobtail Yearlinks`
 )
 
-export const getMetaDescription = longUrl => (
-    `Link to: ${getFormattedUrl(longUrl)}`
+export const getMetaDescription = () => (
+    `A list of links associated with the band Bobtail Yearlings.`
 )
 
-// const getDefaultConfig = description => ({
-//     description: getMetaDescription(description),
-// })
+const getDefaultConfig = () => ({
+    description: getMetaDescription(),
+})
 
-const getFacebookConfig = longUrl => ({
-    'og:url': longUrl,
+const getFacebookConfig = () => ({
+    'og:url': getShortUrlForFile(),
     'og:type': 'website',
     'og:title': getMetaTitle(),
-    'og:description': getMetaDescription(longUrl),
+    'og:description': getMetaDescription(),
     'og:image': getUrlForFile(`share/image/facebook/${APP_NAME}.png`),
 })
 
-const getTwitterConfig = longUrl => ({
+const getTwitterConfig = () => ({
     'twitter:card': 'summary',
     'twitter:site': `@${TWITTER_ACCOUNT}`,
     'twitter:title': getMetaTitle(),
-    'twitter:description': getMetaDescription(longUrl),
+    'twitter:description': getMetaDescription(),
     'twitter:image':
         getUrlForFile(`share/image/twitter/${APP_NAME}.png`),
 })
@@ -38,16 +38,16 @@ const spreadHelmetConfig = ({ config, nameKey }) => (
     }))
 )
 
-export const getMetaTags = longUrl => ([
+export const getMetaTags = () => ([
     ...spreadHelmetConfig({
         config: {
-            // ...getDefaultConfig(longUrl),
-            ...getTwitterConfig(longUrl),
+            ...getDefaultConfig(),
+            ...getTwitterConfig(),
         },
         nameKey: 'name',
     }),
     ...spreadHelmetConfig({
-        config: getFacebookConfig(longUrl),
+        config: getFacebookConfig(),
         nameKey: 'property',
     }),
 ])

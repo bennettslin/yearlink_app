@@ -1,0 +1,7 @@
+@import '../../scss/constants/responsive';
+
+.Paragraph {
+    &:not(:first-child) {
+        margin-top: $margin__md;
+    }
+}

@@ -1,8 +1,5 @@
 export default [
     {
-        path: '/',
-    },
-    {
         path: 'bd',
         context: { longUrl: 'https://bobtaildominoes.com/' },
     },

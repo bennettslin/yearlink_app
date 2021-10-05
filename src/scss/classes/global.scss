@@ -1,0 +1,33 @@
+@import '../constants/colours';
+@import '../constants/responsive';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $colour__text__dark;
+    background-color: $colour__background__light;
+}
+
+body, p, h1 {
+    margin: 0;
+}
+
+h1 {
+    padding-bottom: $margin__md;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+em, i {
+    position: relative;
+    left: -0.05em; // Eyeballed.
+}
