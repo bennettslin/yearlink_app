@@ -1,4 +1,5 @@
 export default [
+    // Band.
     {
         path: 'bd',
         context: { longUrl: 'https://bobtaildominoes.com/' },
@@ -14,5 +15,11 @@ export default [
     {
         path: 'yb',
         context: { longUrl: 'https://www.yearlingsbobtail.com/' },
+    },
+
+    // Personal.
+    {
+        path: 'wo',
+        context: { longUrl: 'https://docs.google.com/spreadsheets/d/1bsbXqklmk98J5RCFDFrKydsAslwua9tooevWU9p90k0' },
     },
 ]
