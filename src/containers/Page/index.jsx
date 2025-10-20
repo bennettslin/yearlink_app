@@ -33,7 +33,7 @@ Our "*Ulysses* of rock albums."
 Our musical tile game.
 
 [*BYCombo*](https://www.bycombo.com/)${'  '}
-Our rock band incubator.
+Our amnesty program for artists.
 
 [*Bobtail Method*](https://www.bobtailmethod.com/)${'  '}
 Our songwriting lesson book.
